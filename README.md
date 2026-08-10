@@ -1,5 +1,6 @@
 # RAG for Humans
 
+> **Este repositório é um conceito.** Uma ideia, uma metodologia, uma forma de pensar — não um produto pronto. Sinta-se livre para usar, adaptar e construir o seu próprio projeto a partir daqui.
 
 ---
 
@@ -86,3 +87,9 @@ Falando do Trello, é mais um exemplo de como a gente tem que pensar para a **ex
 Hoje, facilmente, eu consigo **auditar e buscar os meus projetos**, justamente porque eu estou utilizando **interface feita para humanos, com objetivos semânticos separados**.
 
 Então, fica aqui meu humilde projeto.
+
+---
+
+## Licença
+
+Este projeto é distribuído sob a licença **MIT** — a mais permissiva e pública possível. Você pode usar, copiar, modificar, distribuir e até usar comercialmente, desde que mantenha o aviso de copyright. É um conceito aberto: leve, adapte e construa o seu próprio projeto.
