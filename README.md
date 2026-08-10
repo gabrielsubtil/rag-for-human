@@ -1,34 +1,88 @@
 # RAG for Humans
 
-> Arquitetura de Retrieval-Augmented Generation (RAG) para **agentes de IA**, pensada para humanos — **"human first"**.
 
-Este repositório é um **guia de arquitetura** de RAG. O objetivo é ensinar o *porquê* e o *como* da arquitetura, não entregar código. É um conceito, uma referência para quem quer entender como sistemas RAG funcionam por dentro — e como desenhá-los para que **humanos** consigam entender, verificar e controlar o que um agente de IA faz.
+---
 
-## A tese
+## Quem sou eu
 
-RAG não é só para chatbots responderem perguntas. É o mecanismo que dá a um **agente de IA** acesso a conhecimento externo — e o design **"human first"** garante que o humano consiga **entender, verificar e controlar** o que o agente faz.
+Meu nome é **Gabriel Subtil**. Trabalho com tecnologia há um pouco mais de **20 anos** e, recentemente, com o uso do **Hermes Agent**, criei uma metodologia para ter o **meu próprio sistema de RAG**.
 
-## O que é RAG?
+## O problema: RAG é um conceito amplo
 
-RAG é um **padrão arquitetural** que combina a capacidade generativa de um LLM com conhecimento externo recuperado de uma base de dados, para produzir respostas factualmente corretas e ancoradas em fontes verificáveis — **sem retreinar o modelo**.
+Quando a gente fala em RAG, é um conceito que acaba sendo muito amplo. No Hermes Agent — ou mesmo no Codex, ou no Antigravity IDE — **qualquer arquivo MD, qualquer skill, ou mesmo um banco de dados local, acaba se tornando um RAG**.
 
-Em uma frase: o LLM usa o conhecimento que você fornece (não o que ele "lembra" do treinamento) como contexto para gerar a resposta ou fundamentar a decisão do agente.
+Tudo isso parece promissor e interessante, mas **auditar e gerir esse arquivo local acaba sendo um pouco complexo**. E não deixa de ser RAG também: **servidores MCP**, ou mesmo **busca na web** — afinal, a internet acaba sendo um grande RAG para ter informação.
 
-## Índice
+Mas ainda assim, fora a questão de gestão de dados da empresa, eu fico imaginando como a gente poderia, de alguma maneira, **colocar o ser humano em primeiro lugar**. Num mundo com tanta inteligência artificial, com tantos agentes de IA, **pouco se fala em colocar o ser humano na rédea, colocar o ser humano no controle**. E essa foi a minha intenção.
 
-- [01 — O que é RAG](docs/01-o-que-e-rag.md) — conceito, motivação e memória paramétrica vs. não-paramétrica
-- [02 — Arquitetura](docs/02-arquitetura.md) — as duas fases (build e runtime) e os componentes
-- [03 — Padrões de design](docs/03-padroes.md) — timing da retrieval e variações arquiteturais
-- [04 — Boas práticas](docs/04-boas-praticas.md) — armadilhas e recomendações
-- [05 — Human first](docs/05-human-first.md) — RAG para agentes de IA, design centrado no humano
+## A descoberta
 
-## Conceito central em 30 segundos
+Meio que sem querer, por ser algo realmente natural para mim, eu notei que eu poderia **transferir exatamente o cenário corporativo para o meu Hermes Agent** — que, na verdade, acaba se tornando um **RAG que eu conectei a todas as minhas plataformas**:
 
-- **Memória paramétrica** = conhecimento gravado nos pesos do LLM (fixo, com data de corte).
-- **Memória não-paramétrica** = conhecimento externo consultado em tempo de execução (atualizável, auditável).
+- O meu **OpenCode** tem acesso ao meu RAG.
+- O meu **Antigravity IDE** tem acesso ao meu RAG.
+- O meu **Hermes Agent** — em vários servidores locais, ou em servidores em host, ou em VPS — tem acesso ao mesmo serviço.
 
-RAG conecta as duas: o LLM usa o conhecimento recuperado como contexto para gerar a resposta ou fundamentar a decisão do agente.
+É tão simples o que eu vou falar que eu cogitei nem escrever esse repositório. Na verdade, eu nem saberia como compartilhar isso com vocês, até que, conversando com um colega, acabei achando interessante e criei esse repositório.
 
-## Licença
+## Como funciona
 
-MIT
+Até então eu acho esse projeto **único**. Sei que é bastante comum, mas eu vejo de modo único porque **uni ferramentas que já existem** — que todo time de TI do Brasil ou fora do Brasil tem acesso — mas que as pessoas não estão dando o devido valor. É uma conexão tão simples e tão óbvia que pelo menos os analistas de TI e os gestores de TI com quem eu tenho conversado nem tinham feito essa conexão. O que é normal para uma mente criativa.
+
+Todo time de TI hoje tem:
+- Uma **pasta compartilhada** na rede.
+- Um **cofre de senhas** — e eu espero que seja gerido por um serviço decente, como por exemplo o **Bitwarden**.
+- Um **wiki** auto-hospedado internamente, como por exemplo o **Wiki.js**.
+- E pouquíssimos times de TI documentam algo com, por exemplo, o **BookStack** — um projeto maravilhoso que recentemente eu encontrei quase que por acaso.
+
+**E é justamente isso.** O que eu notei, que poucos ainda notaram, é que **muitas dessas ferramentas hoje já têm servidor MCP, já têm acesso por API, e muitas delas também sempre tiveram alimentação de dados por CLI**. Não é à toa que a gente já utilizava essas plataformas em algumas automações internamente.
+
+**O que eu fiz foi extremamente simples:** eu conectei o meu Hermes Agent a servidores auto-hospedados.
+
+- No meu VPS, eu tenho um **BookStack** instalado.
+- No meu VPS, eu tenho um **Wiki.js** instalado, que é meu.
+- **A gestão é minha, a auditoria é minha.** Eu controlo quem entra, quem sai e quem lê.
+
+## O processo
+
+1. Eu uso o **Hermes Agent** (ou qualquer um desses softwares parecidos, como o VS Code) e faço **pesquisas na internet** e faço **validações**.
+2. Tudo aquilo que eu pesquiso e tudo aquilo que eu valido **na prática, dentro do meu ambiente**, e toda vez que eu preciso documentar algo, **naturalmente já vai para o meu RAG**.
+
+Então, sim, eu vou usar **busca na internet como RAG**. Mas depois que, dentro de várias buscas, eu vejo algo que foi validado ou que mereça guardar:
+
+- Aquilo **vira um livro dentro do meu BookStack**.
+- Aquilo **vira um processo completo dentro do meu Wiki.js**.
+- Ou mesmo um **changelog** — qualquer coisa que eu esteja programando, seja com o Hermes Agent ou mesmo com o meu VS Code, eu já configuro um **agente de IA para documentar aquilo ali**.
+
+## O que este projeto é
+
+Este projeto vai servir para a gente **documentar isso**. Basicamente, este projeto é só para explicar isso para vocês e fazer uma **tabela dos serviços que eu já testei e que eu uso** — e muitos deles eu uso como **skill** ou mesmo como **servidor MCP**.
+
+O grande lance e o grande diferencial de ser — como eu nomeei no repositório — um **RAG para humanos** é ter a **experiência de um usuário humano em primeiro lugar**, ter uma **visibilidade humana em primeiro lugar**.
+
+## Ferramentas que eu uso
+
+| Projeto | Para quê | Como eu utilizo |
+|---|---|---|
+| **Bitwarden** | Cofre de senhas | Via API |
+| **BookStack** | Estante de livros | Escrever guidelines e livros de projetos; dentro deles uso changelog |
+| **Wiki.js** | Wiki (a joia da coroa) | O projeto mais completo, onde mais encontrei coisas |
+
+## Menções honrosas (não uso como RAG)
+
+Outros projetos podem não estar no meu radar, mas a metodologia que eu estou oferecendo a vocês facilmente vocês podem utilizar numa **planilha de Excel** que você e o seu time já utilizavam antes, ou mesmo com **Notion**, que muitas pessoas utilizam hoje em dia. Não me adaptei muito ao Notion, inclusive — salvo engano, para escrever em tabelas de Notion precisa ter outro tipo de API — mas fica a sugestão. Como também o **Trello**, que eu adoro, que eu gosto.
+
+| Projeto | Para quê | Por que não uso como RAG |
+|---|---|---|
+| **Google Workspace** | Planilhas, docs, e-mail | Uso para alimentar tabelas, mas não é meu RAG principal |
+| **Notion** | Notas e documentação | Não me adaptei muito; para tabelas precisa de outro tipo de API |
+| **Trello** | Quadros e gestão de tarefas | Adoro, mas não é meu RAG |
+| **Excel** | Planilhas | Metodologia funciona nele, mas prefiro ferramentas com API/MCP |
+
+## A lição final
+
+Falando do Trello, é mais um exemplo de como a gente tem que pensar para a **experiência do usuário**. Para cada uma dessas ferramentas, a gente tem que pensar no **objetivo para o qual elas foram criadas** e deixar toda essa **interface gráfica do ser humano facilitar**.
+
+Hoje, facilmente, eu consigo **auditar e buscar os meus projetos**, justamente porque eu estou utilizando **interface feita para humanos, com objetivos semânticos separados**.
+
+Então, fica aqui meu humilde projeto.
