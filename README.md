@@ -14,6 +14,8 @@ Quando a gente fala em RAG, é um conceito que acaba sendo muito amplo. No Herme
 
 Tudo isso parece promissor e interessante, mas **auditar e gerir esse arquivo local acaba sendo um pouco complexo**. E não deixa de ser RAG também: **servidores MCP**, ou mesmo **busca na web** — afinal, a internet acaba sendo um grande RAG para ter informação.
 
+Eu tenho notado que as pessoas têm usado a IA de forma **individual**. Eu poderia pressupor que mais de 90% das pessoas do mundo estão utilizando de forma individual as novas tecnologias com inteligência artificial. **O que eu estou construindo aqui é uma visão de equipe.** Eu comecei a me perguntar como um agente de IA de verdade poderia trabalhar dentro de uma equipe — com uma ou mais automações, com uma ou mais poder de inteligência moderna. E quando você coloca um agente de IA dentro de uma equipe, tem **processos que ele tem que respeitar dentro da equipe**. Só que parte da equipe são seres humanos. Eu não posso pressupor que todos de uma equipe são desenvolvedores experientes — existem pessoas que são da área comercial ou da área de marketing, que é muito mais fácil ter uma interface de um Wikipedia do que de um SQL. **É nesse sentido que eu pensei todo esse conceito que eu apresento a vocês.**
+
 Mas ainda assim, fora a questão de gestão de dados da empresa, eu fico imaginando como a gente poderia, de alguma maneira, **colocar o ser humano em primeiro lugar**. Num mundo com tanta inteligência artificial, com tantos agentes de IA, **pouco se fala em colocar o ser humano na rédea, colocar o ser humano no controle**. E essa foi a minha intenção.
 
 ## O que é RAG
