@@ -6,15 +6,15 @@
 
 ## Quem sou eu
 
-Meu nome é **Gabriel Subtil**. Trabalho com tecnologia há um pouco mais de **20 anos** e, recentemente, com o uso do **Hermes Agent**, criei uma metodologia para ter o **meu próprio sistema de RAG**.
+Meu nome é **Gabriel Subtil**. Trabalho com tecnologia há mais de **20 anos** e, recentemente, com o uso do **Hermes Agent**, criei uma metodologia para ter o **meu próprio sistema de RAG**.
 
 ## O problema: RAG é um conceito amplo
 
 Quando a gente fala em RAG, é um conceito que acaba sendo muito amplo. No Hermes Agent — ou mesmo no Codex, ou no Antigravity IDE — **qualquer arquivo MD, qualquer skill, ou mesmo um banco de dados local, acaba se tornando um RAG**.
 
-Tudo isso parece promissor e interessante, mas **auditar e gerir esse arquivo local acaba sendo um pouco complexo**. E não deixa de ser RAG também: **servidores MCP**, ou mesmo **busca na web** — afinal, a internet acaba sendo um grande RAG para ter informação.
+Tudo isso parece promissor, mas **auditar e gerir esses arquivos locais acaba sendo um pouco complexo**. E não deixa de ser RAG também: **servidores MCP**, ou mesmo **busca na web** — afinal, a internet acaba sendo um grande RAG para ter informação.
 
-Eu tenho notado que as pessoas têm usado a IA de forma **individual**. Eu poderia pressupor que mais de 90% das pessoas do mundo estão utilizando de forma individual as novas tecnologias com inteligência artificial. **O que eu estou construindo aqui é uma visão de equipe.** Eu comecei a me perguntar como um agente de IA de verdade poderia trabalhar dentro de uma equipe — com uma ou mais automações, com uma ou mais poder de inteligência moderna. E quando você coloca um agente de IA dentro de uma equipe, tem **processos que ele tem que respeitar dentro da equipe**. Só que parte da equipe são seres humanos. Eu não posso pressupor que todos de uma equipe são desenvolvedores experientes — existem pessoas que são da área comercial ou da área de marketing, que é muito mais fácil ter uma interface de um Wikipedia do que de um SQL. **É nesse sentido que eu pensei todo esse conceito que eu apresento a vocês.**
+Tenho notado que as pessoas usam a IA de forma **individual**. Eu poderia pressupor que mais de 90% das pessoas do mundo estão utilizando de forma individual as novas tecnologias com inteligência artificial. **O que eu estou construindo aqui é uma visão de equipe.** Comecei a me perguntar como um agente de IA de verdade poderia trabalhar dentro de uma equipe — com uma ou mais automações, com uma ou mais ferramentas de inteligência moderna. E quando você coloca um agente de IA dentro de uma equipe, tem **processos que ele precisa respeitar**. Só que parte da equipe são seres humanos. Eu não posso pressupor que todos de uma equipe são desenvolvedores experientes — existem pessoas da área comercial ou de marketing, e é muito mais fácil elas terem uma interface de Wikipedia do que de um SQL. **É nesse sentido que eu pensei todo esse conceito que eu apresento a vocês.**
 
 Mas ainda assim, fora a questão de gestão de dados da empresa, eu fico imaginando como a gente poderia, de alguma maneira, **colocar o ser humano em primeiro lugar**. Num mundo com tanta inteligência artificial, com tantos agentes de IA, **pouco se fala em colocar o ser humano na rédea, colocar o ser humano no controle**. E essa foi a minha intenção.
 
@@ -26,7 +26,7 @@ Na prática, RAG é o mecanismo que dá ao modelo acesso a conhecimento que ele 
 
 **E aqui está o diferencial do que eu estou propondo.** A maioria das pessoas usa RAG de uma forma "técnica": montam um pipeline, indexam documentos, conectam um banco vetorial, e pronto — o modelo responde melhor. É válido, mas o foco está na **máquina**: na performance, na precisão, na infraestrutura.
 
-O que eu estou tentando propor é diferente: **colocar o ser humano no centro**. Em vez de RAG ser só um mecanismo interno para o modelo responder melhor, eu quero que RAG seja uma **camada de conhecimento que o humano consegue ver, auditar e controlar**. Não é só "o modelo busca e responde" — é "o humano sabe de onde veio cada informação, consegue conferir, consegue gerir, e está no controle". O RAG deixa de ser uma caixa preta e vira uma **biblioteca viva, organizada e auditável** — feita para humanos, não apenas para máquinas.
+O que eu estou propondo é diferente: **colocar o ser humano no centro**. Em vez de RAG ser só um mecanismo interno para o modelo responder melhor, eu quero que RAG seja uma **camada de conhecimento que o humano consegue ver, auditar e controlar**. Não é só "o modelo busca e responde" — é "o humano sabe de onde veio cada informação, consegue conferir, consegue gerir, e está no controle". O RAG deixa de ser uma caixa preta e vira uma **biblioteca viva, organizada e auditável** — feita para humanos, não apenas para máquinas.
 
 ## A descoberta
 
@@ -43,6 +43,7 @@ Meio que sem querer, por ser algo realmente natural para mim, eu notei que eu po
 Até então eu acho esse projeto **único**. Sei que é bastante comum, mas eu vejo de modo único porque **uni ferramentas que já existem** — que todo time de TI do Brasil ou fora do Brasil tem acesso — mas que as pessoas não estão dando o devido valor. É uma conexão tão simples e tão óbvia que pelo menos os analistas de TI e os gestores de TI com quem eu tenho conversado nem tinham feito essa conexão. O que é normal para uma mente criativa.
 
 Todo time de TI hoje tem:
+
 - Uma **pasta compartilhada** na rede.
 - Um **cofre de senhas** — e eu espero que seja gerido por um serviço decente, como por exemplo o **Bitwarden**.
 - Um **wiki** auto-hospedado internamente, como por exemplo o **Wiki.js**.
