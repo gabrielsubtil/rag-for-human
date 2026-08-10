@@ -65,6 +65,22 @@ Então, sim, eu vou usar **busca na internet como RAG**. Mas depois que, dentro 
 - Aquilo **vira um processo completo dentro do meu Wiki.js**.
 - Ou mesmo um **changelog** — qualquer coisa que eu esteja programando, seja com o Hermes Agent ou mesmo com o meu VS Code, eu já configuro um **agente de IA para documentar aquilo ali**.
 
+```mermaid
+flowchart LR
+    A["🔎 Pesquisa"] --> B["✅ Validação"]
+    B --> C["🧪 Teste"]
+    C --> D{"Documentar?"}
+    D -->|Sim| E["📚 BookStack<br/>(livros e guidelines)"]
+    D -->|Sim| F["📖 Wiki.js<br/>(processos)"]
+    D -->|Sim| G["📝 Changelog"]
+    D -->|Não| A
+    E --> H["🗄️ Meu RAG"]
+    F --> H
+    G --> H
+```
+
+**O processo em resumo:** eu pesquiso, valido na prática dentro do meu ambiente, testo — e tudo o que merece ser guardado vira documentação no meu RAG (livro no BookStack, processo no Wiki.js ou changelog). O que não passa na validação, volta para a pesquisa.
+
 ## O que este projeto é
 
 Este projeto vai servir para a gente **documentar isso**. Basicamente, este projeto é só para explicar isso para vocês e fazer uma **tabela dos serviços que eu já testei e que eu uso** — e muitos deles eu uso como **skill** ou mesmo como **servidor MCP**.
