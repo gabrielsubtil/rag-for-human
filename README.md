@@ -71,6 +71,8 @@ Este projeto vai servir para a gente **documentar isso**. Basicamente, este proj
 
 O grande lance e o grande diferencial de ser — como eu nomeei no repositório — um **RAG para humanos** é ter a **experiência de um usuário humano em primeiro lugar**, ter uma **visibilidade humana em primeiro lugar**.
 
+> 📊 Veja o [diagrama do meu RAG](docs/06-diagrama.md) — o usuário humano ao centro do processo.
+
 ## Ferramentas que eu uso
 
 | Projeto | Para quê | Como eu utilizo |
