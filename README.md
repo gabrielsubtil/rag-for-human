@@ -16,6 +16,16 @@ Tudo isso parece promissor e interessante, mas **auditar e gerir esse arquivo lo
 
 Mas ainda assim, fora a questão de gestão de dados da empresa, eu fico imaginando como a gente poderia, de alguma maneira, **colocar o ser humano em primeiro lugar**. Num mundo com tanta inteligência artificial, com tantos agentes de IA, **pouco se fala em colocar o ser humano na rédea, colocar o ser humano no controle**. E essa foi a minha intenção.
 
+## O que é RAG
+
+Antes de seguir, deixa eu explicar o ponto de partida. **RAG** é a sigla em inglês para **Retrieval-Augmented Generation** — em português, **Geração Aumentada por Recuperação**. É um conceito que parece complicado, mas é simples: em vez de o modelo de IA responder apenas com o que ele "lembra" do treinamento, o sistema **busca** (recupera) informação relevante em uma fonte externa — um documento, uma base de dados, um arquivo — e **injeta** essa informação no contexto antes de gerar a resposta.
+
+Na prática, RAG é o mecanismo que dá ao modelo acesso a conhecimento que ele não tinha: conhecimento atualizado, específico do seu domínio, da sua empresa, do seu projeto. É o que transforma um modelo genérico em um assistente que conhece o seu mundo.
+
+**E aqui está o diferencial do que eu estou propondo.** A maioria das pessoas usa RAG de uma forma "técnica": montam um pipeline, indexam documentos, conectam um banco vetorial, e pronto — o modelo responde melhor. É válido, mas o foco está na **máquina**: na performance, na precisão, na infraestrutura.
+
+O que eu estou tentando propor é diferente: **colocar o ser humano no centro**. Em vez de RAG ser só um mecanismo interno para o modelo responder melhor, eu quero que RAG seja uma **camada de conhecimento que o humano consegue ver, auditar e controlar**. Não é só "o modelo busca e responde" — é "o humano sabe de onde veio cada informação, consegue conferir, consegue gerir, e está no controle". O RAG deixa de ser uma caixa preta e vira uma **biblioteca viva, organizada e auditável** — feita para humanos, não apenas para máquinas.
+
 ## A descoberta
 
 Meio que sem querer, por ser algo realmente natural para mim, eu notei que eu poderia **transferir exatamente o cenário corporativo para o meu Hermes Agent** — que, na verdade, acaba se tornando um **RAG que eu conectei a todas as minhas plataformas**:
