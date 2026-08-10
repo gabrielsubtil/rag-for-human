@@ -73,15 +73,17 @@ flowchart LR
     B --> C["🧪 Teste"]
     C --> D{"Documentar?"}
     D -->|Sim| E["📚 BookStack<br/>(livros e guidelines)"]
-    D -->|Sim| F["📖 Wiki.js<br/>(processos)"]
-    D -->|Sim| G["📝 Changelog"]
+    D -->|Sim| F["📖 Wiki.js<br/>(documentação e processos)"]
     D -->|Não| A
+    E --> E1["📝 Changelog"]
+    F --> F1["📝 Changelog"]
     E --> H["🗄️ Meu RAG"]
     F --> H
-    G --> H
+    E1 --> H
+    F1 --> H
 ```
 
-**O processo em resumo:** eu pesquiso, valido na prática dentro do meu ambiente, testo — e tudo o que merece ser guardado vira documentação no meu RAG (livro no BookStack, processo no Wiki.js ou changelog). O que não passa na validação, volta para a pesquisa.
+**O processo em resumo:** eu pesquiso, valido na prática dentro do meu ambiente, testo — e tudo o que merece ser guardado vira documentação no meu RAG. A documentação fica no **Wiki.js** (processos) ou no **BookStack** (livros e guidelines), e o **changelog** vive **dentro** dessas ferramentas — como uma linha do BookStack ou do Wiki.js, ou dos dois. O que não passa na validação, volta para a pesquisa.
 
 ## O que este projeto é
 
