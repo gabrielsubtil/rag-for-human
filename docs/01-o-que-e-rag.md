@@ -31,6 +31,7 @@ RAG combina as duas: o LLM (paramétrico) usa o conhecimento recuperado (não-pa
 
 - Grande volume de documentação que precisa ser consultada para respostas autorizadas.
 - Chatbots com conhecimento proprietário ou de domínio específico.
+- **Agentes de IA que precisam agir com fundamento e auditabilidade.**
 - Prevenção de alucinações e respostas desatualizadas.
 - Quando você precisa de respostas **citáveis** e auditáveis.
 

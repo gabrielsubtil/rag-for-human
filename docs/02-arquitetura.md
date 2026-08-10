@@ -14,9 +14,9 @@ Prepara o conhecimento para ser consultado:
 
 ## Fase 2 — Runtime (consulta / serving)
 
-Responde à pergunta do usuário:
+Responde à pergunta do usuário ou fundamenta a decisão do agente:
 
-1. **Query** — usuário envia uma pergunta.
+1. **Query** — usuário envia uma pergunta (ou o agente formula uma sub-consulta).
 2. **Embedding da query** — a pergunta é convertida em vetor usando o **mesmo** modelo de embedding dos documentos (senão os espaços vetoriais não batem).
 3. **Retrieval** — busca os top-K chunks mais relevantes por similaridade.
 4. **Augmentation** — injeta os chunks recuperados no prompt, junto com a pergunta.
@@ -47,7 +47,7 @@ Responde à pergunta do usuário:
                     ┌─────────────────────────────────────────────┐
                     │              FASE DE RUNTIME                │
                     │                                             │
-  Usuário ──► Query ──► Embedding da query ──► Retrieval (top-K)  │
+  Usuário/Agente ─► Query ─► Embedding da query ─► Retrieval (top-K)│
                     │                                             │
                     │        Augmentation (prompt + contexto)      │
                     │        Generation (LLM) ──► Resposta         │
