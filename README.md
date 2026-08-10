@@ -6,7 +6,7 @@
 
 ## Quem sou eu
 
-Meu nome é **Gabriel Subtil**. Trabalho com tecnologia há mais de **20 anos** e, recentemente, com o uso do **Hermes Agent**, criei uma metodologia para ter o **meu próprio sistema de RAG**. A primeira regra desse conceito é simples: **não é fazer times de tecnologia, não é fazer pessoas se adaptarem a uma nova tecnologia — é fazer uma nova tecnologia se adaptar a pessoas.**
+Meu nome é **Gabriel Subtil**. Trabalho com tecnologia há mais de **20 anos** e, recentemente, com o uso do **Hermes Agent**, criei uma metodologia para ter o **meu próprio sistema de RAG**. A primeira regra desse conceito é simples: **não é fazer pessoas ou times de tecnologia se adaptarem a uma nova tecnologia. É fazer uma nova tecnologia se adaptar a pessoas.**
 
 ## O problema: RAG é um conceito amplo
 
